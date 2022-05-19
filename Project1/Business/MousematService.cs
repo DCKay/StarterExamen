@@ -23,5 +23,11 @@ namespace Project1.Business
             _context.Add(mousemat);
             await _context.SaveChangesAsync();
         }
+
+        public async Task RemoveMousemat(Mousemat mousemat)
+        {
+            _context.Remove(mousemat);
+            await _context.SaveChangesAsync();
+        }
     }
 }

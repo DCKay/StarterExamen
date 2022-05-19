@@ -23,5 +23,11 @@ namespace Project1.Business
             _context.Add(keyboard);
             await _context.SaveChangesAsync();
         }
+
+        public async Task RemoveKeyboard(Keyboard keyboard)
+        {
+            _context.Remove(keyboard);
+            await _context.SaveChangesAsync();
+        }
     }
 }

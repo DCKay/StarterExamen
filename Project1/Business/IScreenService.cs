@@ -6,6 +6,8 @@ namespace Project1.Business
     {
         Task AddScreen(Screen screen);
 
+        Task RemoveScreen(Screen screen);
+
         Task<IEnumerable<Screen>> GetAsync();
     }
 }

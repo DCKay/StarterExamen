@@ -6,6 +6,8 @@ namespace Project1.Business
     {
         Task AddMousemat(Mousemat mousemat);
 
+        Task RemoveMousemat(Mousemat mousemat);
+
         Task<IEnumerable<Mousemat>> GetAsync();
     }
 }

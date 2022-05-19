@@ -6,6 +6,8 @@ namespace Project1.Business
     {
         Task AddMicrophone(Microphone microphone);
 
+        Task RemoveMicrophone(Microphone microphone);
+
         Task<IEnumerable<Microphone>> GetAsync();
     }
 }

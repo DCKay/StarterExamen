@@ -23,5 +23,11 @@ namespace Project1.Business
             _context.Add(keySwitch);
             await _context.SaveChangesAsync();
         }
+
+        public async Task RemoveKeySwitch(KeySwitch keySwitch)
+        {
+            _context.Remove(keySwitch);
+            await _context.SaveChangesAsync();
+        }
     }
 }

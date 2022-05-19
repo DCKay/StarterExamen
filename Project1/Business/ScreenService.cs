@@ -23,5 +23,11 @@ namespace Project1.Business
             _context.Add(screen);
             await _context.SaveChangesAsync();
         }
+
+        public async Task RemoveScreen(Screen screen)
+        {
+            _context.Remove(screen);
+            await _context.SaveChangesAsync();
+        }
     }
 }

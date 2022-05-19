@@ -23,5 +23,11 @@ namespace Project1.Business
             _context.Add(mice);
             await _context.SaveChangesAsync();
         }
+
+        public async Task RemoveMice(Mice mice)
+        {
+            _context.Remove(mice);
+            await _context.SaveChangesAsync();
+        }
     }
 }

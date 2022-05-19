@@ -32,5 +32,12 @@ namespace Project1.Controllers
         {
             await _service.AddComputer(computer);
         }
+
+        [AllowAnonymous]
+        [HttpPost]
+        public async Task RemoveComputer(Computer computer)
+        {
+            await _service.RemoveComputer(computer);
+        }
     }
 }

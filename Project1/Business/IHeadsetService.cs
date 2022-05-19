@@ -6,6 +6,8 @@ namespace Project1.Business
     {
         Task AddHeadset(Headset headset);
 
+        Task RemoveHeadset(Headset headset);
+
         Task<IEnumerable<Headset>> GetAsync();
     }
 }

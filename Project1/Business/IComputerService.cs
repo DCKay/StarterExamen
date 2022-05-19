@@ -6,6 +6,8 @@ namespace Project1.Business
     {
         Task AddComputer(Computer computer);
 
+        Task RemoveComputer(Computer computer);
+
         Task<IEnumerable<Computer>> GetAsync();
     }
 }

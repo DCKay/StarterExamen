@@ -6,6 +6,8 @@ namespace Project1.Business
     {
         Task AddKeyboard(Keyboard keyboard);
 
+        Task RemoveKeyboard(Keyboard keyboard);
+
         Task<IEnumerable<Keyboard>> GetAsync();
     }
 }

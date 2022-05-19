@@ -6,6 +6,8 @@ namespace Project1.Business
     {
         Task AddMice(Mice mice);
 
+        Task RemoveMice(Mice mice);
+
         Task<IEnumerable<Mice>> GetAsync();
     }
 }
