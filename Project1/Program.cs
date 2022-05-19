@@ -28,6 +28,14 @@ builder.Services.AddSwaggerGen();
 
 // DEPENDENCY INJECTION
 builder.Services.AddTransient<IComputerService, ComputerService>();
+builder.Services.AddTransient<IHeadsetService, HeadsetService>();
+builder.Services.AddTransient<IKeyboardService, KeyboardService>();
+builder.Services.AddTransient<IKeycapService, KeycapService>();
+builder.Services.AddTransient<IKeySwitchService, KeySwitchService>();
+builder.Services.AddTransient<IMiceService, MiceService>();
+builder.Services.AddTransient<IMicrophoneService, MicrophoneService>();
+builder.Services.AddTransient<IMousematService, MousematService>();
+builder.Services.AddTransient<IScreenService, ScreenService>();
 
 var app = builder.Build();
 

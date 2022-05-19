@@ -2,7 +2,7 @@
 
 namespace Project1.Models
 {
-    public class Keycap
+    public class Keycap : Product
     {
         [MaxLength(35)]
         [Required]
