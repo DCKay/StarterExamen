@@ -29,5 +29,11 @@ namespace Project1.Business
             _context.Remove(microphone);
             await _context.SaveChangesAsync();
         }
+
+        public async Task UpdateMicrophone(Microphone microphone)
+        {
+            _context.Update(microphone);
+            await _context.SaveChangesAsync();
+        }
     }
 }

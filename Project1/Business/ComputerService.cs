@@ -29,5 +29,11 @@ namespace Project1.Business
             _context.Remove(computer);
             await _context.SaveChangesAsync();
         }
+
+        public async Task UpdateComputer(Computer computer)
+        {
+            _context.Update(computer);
+            await _context.SaveChangesAsync();
+        }
     }
 }

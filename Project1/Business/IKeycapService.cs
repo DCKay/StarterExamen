@@ -8,6 +8,8 @@ namespace Project1.Business
 
         Task RemoveKeycap(Keycap keycap);
 
+        Task UpdateKeycap(Keycap keycap);
+
         Task<IEnumerable<Keycap>> GetAsync();
     }
 }

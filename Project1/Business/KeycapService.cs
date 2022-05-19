@@ -29,5 +29,11 @@ namespace Project1.Business
             _context.Remove(keycap);
             await _context.SaveChangesAsync();
         }
+        public async Task UpdateKeycap(Keycap keycap)
+        {
+            _context.Update(keycap);
+            await _context.SaveChangesAsync();
+        }
+
     }
 }

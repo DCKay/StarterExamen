@@ -8,6 +8,8 @@ namespace Project1.Business
 
         Task RemoveKeySwitch(KeySwitch keySwitch);
 
+        Task UpdateKeySwitch(KeySwitch keySwitch);
+
         Task<IEnumerable<KeySwitch>> GetAsync();
     }
 }

@@ -29,5 +29,11 @@ namespace Project1.Business
             _context.Remove(headset);
             await _context.SaveChangesAsync();
         }
+
+        public async Task UpdateHeadset(Headset headset)
+        {
+            _context.Update(headset);
+            await _context.SaveChangesAsync();
+        }
     }
 }

@@ -8,6 +8,8 @@ namespace Project1.Business
 
         Task RemoveMicrophone(Microphone microphone);
 
+        Task UpdateMicrophone(Microphone microphone);
+
         Task<IEnumerable<Microphone>> GetAsync();
     }
 }

@@ -8,6 +8,8 @@ namespace Project1.Business
 
         Task RemoveMice(Mice mice);
 
+        Task UpdateMice(Mice mice);
+
         Task<IEnumerable<Mice>> GetAsync();
     }
 }
