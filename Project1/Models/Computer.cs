@@ -21,7 +21,7 @@ namespace Project1.Models
         public string Name { get; set; }
 
         [MaxLength(20)]
-        public string Colour { get; set; }
+        public Colour Colour { get; set; }
 
         [MaxLength(20)]
         public string OS { get; set; }

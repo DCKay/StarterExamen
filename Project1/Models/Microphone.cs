@@ -9,7 +9,7 @@ namespace Project1.Models
         public string Manufacturer { get; set; }
 
         [MaxLength(20)]
-        public string Colour { get; set; }
+        public Colour Colour { get; set; }
 
         [MaxLength(35)]
         public string Name { get; set; }
