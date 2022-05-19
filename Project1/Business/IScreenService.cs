@@ -1,0 +1,11 @@
+﻿using Project1.Models;
+
+namespace Project1.Business
+{
+    public interface IScreenService
+    {
+        Task AddScreen(Screen screen);
+
+        Task<IEnumerable<Screen>> GetAsync();
+    }
+}

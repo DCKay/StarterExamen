@@ -22,7 +22,6 @@ namespace Project1.Business
         {
             _context.Add(computer);
             await _context.SaveChangesAsync();
-
         }
     }
 }

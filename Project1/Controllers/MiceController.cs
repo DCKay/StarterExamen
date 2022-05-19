@@ -8,12 +8,12 @@ namespace Project1.Controllers
     [Authorize]
     [ApiController]
     [Route("[controller]")]
-    public class ComputerController : ControllerBase
+    public class MiceController : ControllerBase
     {
-        private ILogger<Computer> _logger;
-        private IComputerService _service;
+        private ILogger<Mice> _logger;
+        private IMiceService _service;
 
-        public ComputerController(ILogger<Computer> logger, IComputerService service)
+        public MiceController(ILogger<Mice> logger, IMiceService service)
         {
             _logger = logger;
             _service = service;
@@ -21,16 +21,16 @@ namespace Project1.Controllers
 
         [AllowAnonymous]
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Computer>>> Get()
+        public async Task<ActionResult<IEnumerable<Mice>>> Get()
         {
             return Ok(await _service.GetAsync());
         }
 
         [AllowAnonymous]
         [HttpPost]
-        public async Task AddComputer(Computer computer)
+        public async Task AddMice(Mice mice)
         {
-            await _service.AddComputer(computer);
+            await _service.AddMice(mice);
         }
     }
 }

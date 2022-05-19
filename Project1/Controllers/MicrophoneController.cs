@@ -8,12 +8,12 @@ namespace Project1.Controllers
     [Authorize]
     [ApiController]
     [Route("[controller]")]
-    public class ComputerController : ControllerBase
+    public class MicrophoneController : ControllerBase
     {
-        private ILogger<Computer> _logger;
-        private IComputerService _service;
+        private ILogger<Microphone> _logger;
+        private IMicrophoneService _service;
 
-        public ComputerController(ILogger<Computer> logger, IComputerService service)
+        public MicrophoneController(ILogger<Microphone> logger, IMicrophoneService service)
         {
             _logger = logger;
             _service = service;
@@ -21,16 +21,16 @@ namespace Project1.Controllers
 
         [AllowAnonymous]
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Computer>>> Get()
+        public async Task<ActionResult<IEnumerable<Microphone>>> Get()
         {
             return Ok(await _service.GetAsync());
         }
 
         [AllowAnonymous]
         [HttpPost]
-        public async Task AddComputer(Computer computer)
+        public async Task AddMicrophone(Microphone microphone)
         {
-            await _service.AddComputer(computer);
+            await _service.AddMicrophone(microphone);
         }
     }
 }

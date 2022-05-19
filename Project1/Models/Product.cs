@@ -12,9 +12,9 @@ namespace Project1.Models
         public string Title { get; set; }
 
         [MaxLength(350)]
-        public string SubTitle{ get; set; }
+        public string SubTitle { get; set; }
 
-        [Range(0,5)]
+        [Range(0, 5)]
         public int Rating { get; set; }
 
         public string Image { get; set; }

@@ -1,0 +1,27 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Project1.Data;
+using Project1.Models;
+
+namespace Project1.Business
+{
+    public class KeySwitchService : IKeySwitchService
+    {
+        private ApplicationDbContext _context;
+
+        public KeySwitchService(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        public async Task<IEnumerable<KeySwitch>> GetAsync()
+        {
+            return await _context.KeySwitches.ToArrayAsync();
+        }
+
+        public async Task AddKeySwitch(KeySwitch keySwitch)
+        {
+            _context.Add(keySwitch);
+            await _context.SaveChangesAsync();
+        }
+    }
+}
