@@ -8,7 +8,7 @@ namespace Project1.Business
 
         Task RemoveKeyboard(Keyboard keyboard);
 
-        Task updateKeyboard(Keyboard keyboard);
+        Task UpdateKeyboard(Keyboard keyboard);
 
         Task<IEnumerable<Keyboard>> GetAsync();
     }

@@ -25,7 +25,6 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddSwaggerGen();
 
-
 // DEPENDENCY INJECTION
 builder.Services.AddTransient<IComputerService, ComputerService>();
 builder.Services.AddTransient<IHeadsetService, HeadsetService>();
@@ -65,7 +64,7 @@ app.UseSwaggerUI(options =>
 app.UseCors(x => x
     .AllowAnyMethod()
     .AllowAnyHeader()
-    .SetIsOriginAllowed(origin => true) // allow any origin 
+    .SetIsOriginAllowed(origin => true) // allow any origin
     .AllowCredentials());
 
 app.UseAuthentication();

@@ -37,7 +37,7 @@ namespace Project1.Data
                     CPU = "Intel I7",
                     Ram = "16GB DDR4",
                     Storage = "500GB NVME SSD",
-                    Name ="Computer",
+                    Name = "Computer",
                     Colour = Colour.Black,
                     OS = "Windows 11",
                     GPU = "MSI GeForce RTX 3090 GAMING X TRIO 24GB",
