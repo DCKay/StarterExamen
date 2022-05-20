@@ -6,12 +6,12 @@ namespace Project1.Models
     {
         [MaxLength(35)]
         [Required]
-        public string Manufacturer { get; set; }
+        public string? Manufacturer { get; set; }
 
         [MaxLength(20)]
         public Colour Colour { get; set; }
 
         [MaxLength(35)]
-        public string Name { get; set; }
+        public string? Name { get; set; }
     }
 }
