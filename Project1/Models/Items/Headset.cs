@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Project1.Models
+namespace Project1.Models.Items
 {
-    public class Keyboard : Product
+    public class Headset : Product
     {
         [MaxLength(35)]
         [Required]
@@ -14,14 +14,8 @@ namespace Project1.Models
         [MaxLength(35)]
         public string? Name { get; set; }
 
-        public bool HasRGB { get; set; }
+        public bool HasMicro { get; set; }
 
-        public Layout Layout { get; set; }
-
-        public string? Switches { get; set; }
-
-        public bool Wireless { get; set; }
-
-        public string? Size { get; set; }
+        public bool IsWired { get; set; }
     }
 }

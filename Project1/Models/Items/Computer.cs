@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Project1.Models
+namespace Project1.Models.Items
 {
     public class Computer : Product
     {
@@ -13,7 +13,7 @@ namespace Project1.Models
 
         [MaxLength(20)]
         public string? Ram { get; set; }
-        
+
         [MaxLength(20)]
         public string? Storage { get; set; }
 

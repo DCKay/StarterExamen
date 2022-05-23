@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Project1.Models
+namespace Project1.Models.Items
 {
-    public class Headset : Product
+    public class Keycap : Product
     {
         [MaxLength(35)]
         [Required]
@@ -13,9 +13,5 @@ namespace Project1.Models
 
         [MaxLength(35)]
         public string? Name { get; set; }
-
-        public bool HasMicro { get; set; }
-
-        public bool IsWired { get; set; }
     }
 }

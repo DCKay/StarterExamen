@@ -5,7 +5,6 @@ namespace Project1.Models
     public abstract class Product
     {
         [Key]
-        
         public int Id { get; set; }
 
         [MaxLength(100)]
