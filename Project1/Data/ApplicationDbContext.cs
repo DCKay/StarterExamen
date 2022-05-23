@@ -13,6 +13,15 @@ namespace Project1.Data
         public ApplicationDbContext(DbContextOptions options, IOptions<OperationalStoreOptions> operationalStoreOptions)
             : base(options, operationalStoreOptions)
         {
+            _dComp = new();
+            _dHead = new();
+            _dKeyB = new();
+            _dKeyC = new();
+            _dKeyS = new();
+            _dMice = new();
+            _dMicro = new();
+            _dMMat = new();
+            _dScreen = new();
         }
 
         public DbSet<Computer> Computers { get; set; }
@@ -25,44 +34,44 @@ namespace Project1.Data
         public DbSet<Mousemat> Mousemats { get; set; }
         public DbSet<Screen> Screens { get; set; }
 
-        DummyComputer dComp = new();
-        DummyHeadset dHead = new();
-        DummyKeyboard dKeyB = new();
-        DummyKeycap dKeyC = new();
-        DummyKeySwitch dKeyS = new();
-        DummyMice dMice = new();
-        DummyMicrophone dMicro = new();
-        DummyMousemat dMMat = new();
-        DummyScreen dScreen = new();
+        private DummyComputer _dComp;
+        private DummyHeadset _dHead;
+        private DummyKeyboard _dKeyB;
+        private DummyKeycap _dKeyC;
+        private DummyKeySwitch _dKeyS;
+        private DummyMice _dMice;
+        private DummyMicrophone _dMicro;
+        private DummyMousemat _dMMat;
+        private DummyScreen _dScreen;
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<Computer>().HasData(
-                dComp.DummyData()
+                _dComp.DummyData()
                 );
             builder.Entity<Headset>().HasData(
-                dHead.DummyData()
+                _dHead.DummyData()
                 );
             builder.Entity<Keyboard>().HasData(
-                dKeyB.DummyData()
+                _dKeyB.DummyData()
                 );
             builder.Entity<Keycap>().HasData(
-                dKeyC.DummyData()
+                _dKeyC.DummyData()
                 );
             builder.Entity<KeySwitch>().HasData(
-                dKeyS.DummyData()
+                _dKeyS.DummyData()
                 );
             builder.Entity<Mice>().HasData(
-                dMice.DummyData()
+                _dMice.DummyData()
                 );
             builder.Entity<Microphone>().HasData(
-                dMicro.DummyData()
+                _dMicro.DummyData()
                 );
             builder.Entity<Mousemat>().HasData(
-                dMMat.DummyData()
+                _dMMat.DummyData()
                 );
             builder.Entity<Screen>().HasData(
-                dScreen.DummyData()
+                _dScreen.DummyData()
                 );
 
             base.OnModelCreating(builder);

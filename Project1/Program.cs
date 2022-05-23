@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Project1.Business;
 using Project1.Data;
 using Project1.Models;
+using Project1.Models.Users;
 
 var builder = WebApplication.CreateBuilder(args);
 
