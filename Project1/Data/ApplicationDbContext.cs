@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Project1.Models;
+using Project1.Models.Items;
+using Project1.Models.Users;
 
 namespace Project1.Data
 {
