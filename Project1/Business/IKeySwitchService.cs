@@ -1,4 +1,4 @@
-﻿using Project1.Models;
+﻿using Project1.Models.Items;
 
 namespace Project1.Business
 {

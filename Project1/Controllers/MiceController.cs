@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Project1.Business;
-using Project1.Models;
+using Project1.Models.Items;
 
 namespace Project1.Controllers
 {

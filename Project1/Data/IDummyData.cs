@@ -2,6 +2,6 @@
 {
     public interface IDummyData
     {
-        string DummyData();
+        void DummyData();
     }
 }

@@ -47,39 +47,35 @@ namespace Project1.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<Computer>().HasData(
-                _dComp.DummyData()
+                new Computer { Id = 2, Colour = Colour.Black, CPU = "intel", GPU = "MSI", Image ="", Manufacturer = "PcMaker", Name = "GoodPC", OS ="Windows", PSU = "Silent", Ram = "Over 9k", Rating = 4, Storage = "To much", SubTitle = "T", Title = "TT", WiFi = true }
                 );
-            builder.Entity<Headset>().HasData(
-                _dHead.DummyData()
-                );
-            builder.Entity<Keyboard>().HasData(
-                _dKeyB.DummyData()
-                );
-            builder.Entity<Keycap>().HasData(
-                _dKeyC.DummyData()
-                );
-            builder.Entity<KeySwitch>().HasData(
-                _dKeyS.DummyData()
-                );
-            builder.Entity<Mice>().HasData(
-                _dMice.DummyData()
-                );
-            builder.Entity<Microphone>().HasData(
-                _dMicro.DummyData()
-                );
-            builder.Entity<Mousemat>().HasData(
-                _dMMat.DummyData()
-                );
-            builder.Entity<Screen>().HasData(
-                _dScreen.DummyData()
-                );
+                _dComp.DummyData();
+            //builder.Entity<Headset>().HasData(
+            //    _dHead.DummyData()
+            //    );
+            //builder.Entity<Keyboard>().HasData(
+            //    _dKeyB.DummyData()
+            //    );
+            //builder.ManufacturerEntity<Keycap>().HasData(
+            //    _dKeyC.DummyData()
+            //    );
+            //builder.Entity<KeySwitch>().HasData(
+            //    _dKeyS.DummyData()
+            //    );
+            //builder.Entity<Mice>().HasData(
+            //    _dMice.DummyData()
+            //    );
+            //builder.Entity<Microphone>().HasData(
+            //    _dMicro.DummyData()
+            //    );
+            //builder.Entity<Mousemat>().HasData(
+            //    _dMMat.DummyData()
+            //    );
+            //builder.Entity<Screen>().HasData(
+            //    _dScreen.DummyData()
+            //    );
 
             base.OnModelCreating(builder);
-        }
-
-        private Computer[] DummyData()
-        {
-            throw new NotImplementedException();
         }
     }
 }

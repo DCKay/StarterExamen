@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Project1.Models
+namespace Project1.Models.Items
 {
     public class Mice : Product
     {

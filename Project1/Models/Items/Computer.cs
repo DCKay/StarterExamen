@@ -8,28 +8,28 @@ namespace Project1.Models.Items
         [Required]
         public string? Manufacturer { get; set; }
 
-        [MaxLength(20)]
+        [MaxLength(50)]
         public string? CPU { get; set; }
 
-        [MaxLength(20)]
+        [MaxLength(50)]
         public string? Ram { get; set; }
 
-        [MaxLength(20)]
+        [MaxLength(50)]
         public string? Storage { get; set; }
 
         [MaxLength(35)]
         public string? Name { get; set; }
 
-        [MaxLength(20)]
+        [MaxLength(50)]
         public Colour Colour { get; set; }
 
-        [MaxLength(20)]
+        [MaxLength(50)]
         public string? OS { get; set; }
 
-        [MaxLength(20)]
+        [MaxLength(50)]
         public string? GPU { get; set; }
 
-        [MaxLength(20)]
+        [MaxLength(50)]
         public string? PSU { get; set; }
 
         public bool WiFi { get; set; }
